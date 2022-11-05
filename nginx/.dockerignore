@@ -1,0 +1,5 @@
+# ignore files while build image
+.git
+.cache
+.env
+*.md

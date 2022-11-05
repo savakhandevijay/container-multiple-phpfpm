@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+    nginx:
+        build:
+            context: ./dockerfiles
+            dockerfile: nginx.dockerfile
+        volumes:
+            - ${CWCM_APP}:/var/www/html/cwcm
+            - ${LOG_PATH}/nginx:/var/log/nginx
+            - ${CWCMTEST_APP}:/var/www/html/cwcmtest
+        ports:
+            - ${HTTPS_PORT}:443
+            - ${APP_PORT}:80
+        restart: unless-stopped        
+        networks:
+            - cex
+networks:
+    cex:
+        driver: bridge
+        name: cex

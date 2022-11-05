@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+    cwcm:
+        image: php:8-fpm-alpine
+        restart: unless-stopped
+        volumes:
+            - /home/vsavakhande/Projects/php8cwcm/src/www:/var/www/html/cwcm
+            - ./logs:/var/log
+        networks:
+            - cex
+networks:
+    cex:
+        driver: bridge
+        name: cex
