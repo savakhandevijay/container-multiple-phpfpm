@@ -1,5 +1,5 @@
 # How to configure multiple PHP-FPM
-## configure php-fpm
+## Configure PHP-FPM
  - create docker-compose.yml
  - service name must be unique e.g. `cwcm` service name need to registed as server in nginx.conf file under http block, under upstream directive.
  - check the volume path attached here, with respect to server path. it must be sync with nginx server block root directive e.g. `/var/www/html/cwcm` this folder must be sync with document root in nginx server block configuration. This will be mislead to php files that nginx serving
@@ -8,7 +8,7 @@
  - Do not provide `container_name`, as when we have to scale docker container it need to create unique container name, this will difficult when you provide container name. When we do not provide it. it takes defualt project directory name, service name and then number of container. e.g. `phpfpm-cwcm-1`.
 ___
 
-## configure nginx
+## Configure Nginx
  - create docker-compose.yml
  - make sure you are copy all `*.conf` files to the `/etc/nginx/conf.d/` location. eg. here `cwcm` and `cwcmtest` folder has `conf` files.
  - make sure volume mapping should be in sync with nginx server directive i.e document root path. e.g `cwcm` folder has document root folder `/var/www/html/cwcm/docroot` wheareas `cwcmtest` has document root `/var/www/html/cwcmtest/docroot`. make sure your php files coping to correct location.
