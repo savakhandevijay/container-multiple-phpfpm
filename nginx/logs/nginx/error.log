@@ -1,8 +1,0 @@
-2022/11/05 08:17:27 [warn] 1#1: conflicting server name "uk.ecom.dev.bikex.store" on 0.0.0.0:443, ignored
-2022/11/05 08:17:27 [warn] 1#1: conflicting server name "es.ecom.dev.designerexchange.com" on 0.0.0.0:443, ignored
-2022/11/05 08:17:27 [warn] 1#1: conflicting server name "uk.ecom.dev.designerexchange.com" on 0.0.0.0:443, ignored
-2022/11/05 08:17:27 [warn] 1#1: conflicting server name "uk.ecom.dev.kidx.com" on 0.0.0.0:443, ignored
-2022/11/05 08:17:27 [warn] 1#1: conflicting server name "uk.ecom.dev.bikex.store" on [::]:443, ignored
-2022/11/05 08:17:27 [warn] 1#1: conflicting server name "es.ecom.dev.designerexchange.com" on [::]:443, ignored
-2022/11/05 08:17:27 [warn] 1#1: conflicting server name "uk.ecom.dev.designerexchange.com" on [::]:443, ignored
-2022/11/05 08:17:27 [warn] 1#1: conflicting server name "uk.ecom.dev.kidx.com" on [::]:443, ignored
